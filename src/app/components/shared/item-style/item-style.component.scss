@@ -1,0 +1,17 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    .taskInfo{
+        display: flex;
+        align-items: center;
+    }
+    .timeStamp{
+        font-size: small;
+    }
+}
+.editable{
+    background-color: green;
+    color: snow;
+    padding: 5px;
+}

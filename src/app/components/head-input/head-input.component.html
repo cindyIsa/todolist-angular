@@ -1,0 +1,10 @@
+
+<mat-form-field class="example-full-width" >
+    <mat-label *ngIf="!isEditMode">Add a new task</mat-label>
+    <mat-label *ngIf="isEditMode">EditMode</mat-label>
+    <input 
+    [ngClass]="{'editable': isEditMode}"
+    matInput type="text" [(ngModel)]="taskName" 
+    (keyup.enter)= "confirmInput()" >
+    
+</mat-form-field>
